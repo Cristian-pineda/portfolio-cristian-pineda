@@ -20,8 +20,8 @@ h1 {
     font-family: Poppins;
     font-weight: bold;
     font-size: 32px;
-    margin: 0 0 30px 0;
-    padding: 0px;
+    /* margin: 0 0 30px 0;
+    padding: 0px; */
 }
 
 h3 {
@@ -29,8 +29,8 @@ h3 {
     font-weight:normal;
     font-size: 18.5px;
     color: #656565;
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px;
+    padding: 0px; */
 }
 
 p {
@@ -38,21 +38,22 @@ p {
     font-weight:normal;
     font-size: 16.5px;
     color: #131212;
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px;
+    padding: 0px; */
 }
 
 /* Navigation Bar */
 
 header {
     background-color: #ffffff;
+    /* box-shadow: 5px 10px; */
     margin: 0px;
     padding: 0px;
 }
 
 .top_nav {
     margin: 0px 80px;
-    padding: 16px 0 160px 0;
+    padding: 16px 0 16px 0;
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -83,32 +84,14 @@ header {
 
 /* home screen */
 
-.home{
-    margin: 0px 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.home_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr)
+}
+
+.home {
+    background-color: aliceblue;
     text-align: center;
-}
-
-.p_one{
-    width: 700px;
-    margin: 0 10%;
-}
-
-#how_i_work {
-    font-family:Poppins;
-    font-size: 20px;
-    font-weight: medium;
-    margin: 30px 0 0 0;
-    width: 175px;
-    height: 40px;
-    color: white;
-    background-color:#f24f13;
-    border-style: none;
-}
-
-.keyboard {
-    margin: 0;
-    align-items: flex-start;
+    border: black 1px solid;
 }
