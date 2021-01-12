@@ -1,47 +1,151 @@
-/* general */
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
-section {
-    margin: 0 80px;
-}
+/* Doc Reset */
 
 * {
-    margin: 0px;
+    box-sizing: border-box;
     padding: 0px;
+    margin: 0px;
 }
 
+/* colors */
 
-/* Font Sizes */
+/* #515151 dark grey */
+/* #F24F13 solid orange  */
+/* #F29F05 mustard orange  */
+/* #F2F2F2 matte white */
+/* #3B6FD9 pastel blue */
+/* #1A5AD9 rich blue  */
+
+/*------------------ General Fonts-------------------- */
+
+html {
+    font-size: 62.5%; /* reminder the 62.5% equals 10px and the rem units are multipliers so 1.6 rem would = 16px, 2.0 rem = 20px */
+}
 
 h1 {
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 32px;
-    margin: 0 0 25px 0;
-    padding: 0px;
+    font-family: 'Poppins';
+    color: #000000;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
-    font-family: Source Sans Pro, sans-serif;
-    font-weight:normal;
-    font-size: 18.5px;
-    color: #656565;
-    /* margin: 0px;
-    padding: 0px; */
+    font-family: 'Source Sans Pro';
+    color: #515151;
+    font-size: 1.6rem;
+    margin: 0px;
 }
 
 p {
-    font-family: Source Sans Pro, sans-serif;
-    font-weight:normal;
-    font-size: 16.5px;
-    color: #131212;
-    margin: 0 0 25px 0;
-    padding: 0px;
+    font-family: 'Source Sans Pro';
+    color: #515151;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
 }
 
-/* Navigation Bar */
+a {
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+li {
+    font-family: 'Poppins';
+    list-style: none;
+}
+
+/* body {
+    height: 4000px; */
+
+
+/*------------------ Navigation-------------------- */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+.navlinks {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 8px rgba(59, 111, 217, .10);
+    display: flex;
+    padding: 1.5rem 0 1rem 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navItem {
+    margin-right: 3rem;
+}
+
+
+.navItem a{
+    font-size: 2rem;
+    color: black;
+}
+
+.navItem:first-child {
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+#logo {
+    font-size: 2.5rem;
+}
+
+#btn {
+    background-color: #F24F13;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #3B6FD9;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
+}
+
+/*------------------ Navigation-------------------- */
+
+.home {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 200px auto 200px 25%;
+    grid-template-rows: 40% 100px 5% auto;
+    align-items: center;
+    justify-content: center;
+}
+.hContent {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+}
+
+#hiWork {
+    margin-bottom: 3rem;
+    background-color: #F24F13;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+}
+
+#hiWork:hover {
+    background-color: #3B6FD9;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
+}
+
+.keybImage {
+    /* margin-top: 5rem; */
+    grid-column: 3;
+    grid-row: 4;
+    /* background-color: aliceblue; */
+    justify-self: center;
+    align-self: center;
+}
+
+/*------------------ Recent Work -------------------- */
+
