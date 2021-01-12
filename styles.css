@@ -3,15 +3,17 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
 }
 
 
 section {
-    background-color: white;
     margin: 0 80px;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 
 /* Font Sizes */
@@ -20,8 +22,8 @@ h1 {
     font-family: Poppins;
     font-weight: bold;
     font-size: 32px;
-    /* margin: 0 0 30px 0;
-    padding: 0px; */
+    margin: 0 0 25px 0;
+    padding: 0px;
 }
 
 h3 {
@@ -38,60 +40,8 @@ p {
     font-weight:normal;
     font-size: 16.5px;
     color: #131212;
-    /* margin: 0px;
-    padding: 0px; */
-}
-
-/* Navigation Bar */
-
-header {
-    background-color: #ffffff;
-    /* box-shadow: 5px 10px; */
-    margin: 0px;
+    margin: 0 0 25px 0;
     padding: 0px;
 }
 
-.top_nav {
-    margin: 0px 80px;
-    padding: 16px 0 16px 0;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    font-size: 20px;
-    font-weight: medium;
-    font-family: Poppins;
-}
-
-.logo {
-    flex:1;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.contact {
-    background-color:#f24f13;
-    color: #ffffff;
-    padding: 5px 20px;
-}
-
-.work {
-    padding: 8px 30px 8px 16px;
-}
-
-.about {
-    padding: 8px 50px 8px 16px;
-}
-
-/* home screen */
-
-.home_content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr)
-}
-
-.home {
-    background-color: aliceblue;
-    text-align: center;
-    border: black 1px solid;
-}
+/* Navigation Bar */
