@@ -70,7 +70,7 @@ li {
     background-color: #ffffff;
     box-shadow: 0px 0px 20px 8px rgba(59, 111, 217, .10);
     display: flex;
-    padding: 1.5rem 0 1rem 0;
+    padding: 1.5rem 8rem 1rem 8rem;
     justify-content: flex-end;
     align-items: center;
 }
@@ -87,6 +87,7 @@ li {
 
 .navItem:first-child {
     font-weight: bold;
+    /* justify-self: flex-start; */
     margin-right: auto;
     margin-left: 2rem;
 }
@@ -100,6 +101,7 @@ li {
     color: #ffffff;
     padding: .8rem 1.5rem;
     cursor: pointer;
+    transition: background-color .4s ease-in-out;
 }
 
 #btn:hover {
@@ -108,7 +110,7 @@ li {
     padding: .8rem 1.5rem;
 }
 
-/*------------------ Navigation-------------------- */
+/*------------------ Home-------------------- */
 
 .home {
     height: 100vh;
@@ -130,6 +132,7 @@ li {
     color: #ffffff;
     padding: .8rem 1.5rem;
     cursor: pointer;
+    transition: background-color .4s ease-in-out;
 }
 
 #hiWork:hover {
@@ -149,3 +152,32 @@ li {
 
 /*------------------ Recent Work -------------------- */
 
+.recent_work {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 35% 100px auto 200px 25%;
+    grid-template-rows: 40% 100px 5% auto;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.recentWorkContent {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+#recentWorkbtn {
+    margin-bottom: 3rem;
+    background-color: #F24F13;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+    transition: background-color .4s ease-in-out;
+}
+
+#recentWorkbtn:hover {
+    background-color: #3B6FD9;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
