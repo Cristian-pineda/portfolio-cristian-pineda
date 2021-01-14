@@ -157,7 +157,7 @@ li {
     align-self: center;
 }
 
-/*------------------ Recent Work -------------------- */
+/*------------------ design process -------------------- */
 
 /* .recent_work {
     height: 100vh;
@@ -169,7 +169,7 @@ li {
     justify-content: center;
 } */
 
-.recent_work {
+.designProcess {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -179,7 +179,7 @@ li {
     justify-content: center;
 }
 
-.recentWorkContent {
+.designProcessContent {
     grid-column: 1/span 3;
     grid-row: 2/ span 3;
     margin-left: 15%;
@@ -260,3 +260,72 @@ li {
     text-align: center;
     font-size: 1.6rem
 }
+
+
+/*------------------ Case Studies  -------------------- */
+
+.case_studies {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.casestudy_Content {
+    grid-column: 1/span 3;
+    grid-row: 2/ span 3;
+    margin-left: 15%;
+}
+
+#ui-desingbtn {
+    margin-bottom: 3rem;
+    background-color: #F24F13;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+    transition: background-color .4s ease-in-out;
+}
+
+#ui-desingbtn:hover {
+    background-color: #3B6FD9;
+    color: #ffffff;
+}
+
+
+/*------------------ UI Design  -------------------- */
+
+.uiDesigns {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-designContent {
+    grid-column: 1/span 3;
+    grid-row: 2/ span 3;
+    margin-left: 15%;
+}
+
+#vmore-dribbble {
+    margin-bottom: 3rem;
+    background-color: none;
+    border: 3.5px solid #F24F13;
+    color: #515151;
+    font-weight: medium;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+    transition: background-color .4s ease-in-out;
+}
+
+/* #vmore-dribbble:hover {
+    background-color: #3B6FD9;
+    color: #ffffff;
+} */
+
