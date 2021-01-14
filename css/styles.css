@@ -28,6 +28,13 @@ h1 {
     margin-bottom: 2rem;
 }
 
+h2 {
+    font-family: 'Poppins';
+    font-weight: medium;
+    color: #F2F2F2;
+    font-size: 2.2rem;
+}
+
 h3 {
     font-family: 'Source Sans Pro';
     color: #515151;
@@ -70,7 +77,7 @@ li {
     background-color: #ffffff;
     box-shadow: 0px 0px 20px 8px rgba(59, 111, 217, .10);
     display: flex;
-    padding: 1.5rem 8rem 1rem 8rem;
+    padding: 1.5rem 0 1rem 0;
     justify-content: flex-end;
     align-items: center;
 }
@@ -152,7 +159,7 @@ li {
 
 /*------------------ Recent Work -------------------- */
 
-.recent_work {
+/* .recent_work {
     height: 100vh;
     display: grid;
     grid-template-columns: 35% 100px auto 200px 25%;
@@ -160,13 +167,27 @@ li {
     margin: 0px;
     align-items: center;
     justify-content: center;
+} */
+
+.recent_work {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
 }
 
 .recentWorkContent {
-    grid-column: 1;
-    grid-row: 2;
+    grid-column: 1/span 3;
+    grid-row: 2/ span 3;
+    margin-left: 15%;
 }
 
+/* div {
+    border: 1px solid grey;
+} */
 
 #recentWorkbtn {
     margin-bottom: 3rem;
@@ -180,4 +201,62 @@ li {
 #recentWorkbtn:hover {
     background-color: #3B6FD9;
     color: #ffffff;
-    padding: .8rem 1.5rem;
+}
+
+/* Bubbbles */
+
+.circleOne {
+    grid-column: 5/ span 2;
+    grid-row: 2/ span 3;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F24F13;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.researchOne {
+    text-align: center;
+}
+
+.circleTwo {
+    grid-column: 6/ span 3;
+    grid-row: 3/ span 3;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #F29F05;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.IdiationC {
+    text-align: center;
+}
+
+.circleThree {
+    grid-column: 7/ span 2;
+    grid-row: 2/ span 2;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3B6FD9;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.TestingC {
+    text-align: center;
+    font-size: 1.6rem
+}
