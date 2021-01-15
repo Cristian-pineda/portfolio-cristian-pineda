@@ -329,3 +329,35 @@ li {
     color: #ffffff;
 } */
 
+
+/*------------------ UI Design  -------------------- */
+
+
+.about {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.aboutContent {
+    justify-content: center;
+    align-self: center;
+    grid-column: 3/ span 4;
+    grid-row: 2/ span 3;
+    text-align: center;
+}
+
+#abtContactbtn{
+    margin-bottom: 3rem;
+    background-color: #F24F13;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+    transition: background-color .4s ease-in-out;
+}
+
+#abtContactbtn:hover {
+    background-color: #3B6FD9;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
+}
