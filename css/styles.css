@@ -337,8 +337,14 @@ li {
     width: 200px;
     height: 150px;
     box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
+
+.image1:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
 
 .image2 {
     grid-column: 7/span 2;
@@ -350,8 +356,15 @@ li {
     width: 200px;
     height: 150px;
     box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
+
+.image2:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+
 
 .image3 {
     justify-self: flex-end;
@@ -364,8 +377,15 @@ li {
     width: 200px;
     height: 150px;
     box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
+
+.image3:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+
 
 .image4 {
     grid-column: 7/span 2;
@@ -377,8 +397,15 @@ li {
     width: 200px;
     height: 150px;
     box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
+
+.image4:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+
 
 .image5 {
     justify-self: flex-end;
@@ -391,8 +418,15 @@ li {
     width: 200px;
     height: 150px;
     box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
+
+.image5:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+
 
 .image6 {
     grid-column: 7/span 2;
@@ -404,8 +438,15 @@ li {
     width: 200px;
     height: 150px;
     box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
+
+.image6:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+
 
 /*------------------ about  -------------------- */
 
@@ -439,18 +480,71 @@ li {
     padding: .8rem 1.5rem;
 }
 
-/*------------------ UI Design  -------------------- */
+/*------------------ Contact  -------------------- */
 
-.about {
+.contact {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
-.aboutContent {
-    justify-content: center;
+.Ctct-hdng-content {
+    /* justify-content: center; */
     align-self: center;
     grid-column: 3/ span 4;
-    grid-row: 2/ span 3;
+    grid-row: 2;
     text-align: center;
+}
+
+
+.cntctForm {
+    width: 65rem;
+    height: 30rem;
+    box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
+    border-radius: 1.6rem;
+    justify-self: center;
+    align-self: center;
+    grid-column: 3/ span 4;
+    grid-row: 3/ span 2;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+
+.formTextContent {
+    justify-self: flex-end;
+    align-self: center;
+    margin-left: 2.4rem;
+    grid-column: 1/ span 4;
+    grid-row: 2/ span 5;
+}
+/* 
+.avatarImg {
+
+    grid-column:1;
+    grid-row: 2;
+} */
+
+.line {
+    justify-self: center;
+    width: 1.2px;
+    background-color: #3b70d933;
+    grid-column: 5/ span 2;
+    grid-row: 2/span 3;
+}
+
+.formFields {
+    justify-self: center;
+    align-self: center;
+    grid-column: 6/ span 3;
+    grid-row: 1/span 5;
+}
+
+.input-container {
+    margin: 1.6rem;
+}
+
+.output-container {
+    margin: 1.6rem;
 }
