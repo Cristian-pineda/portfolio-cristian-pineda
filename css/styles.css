@@ -42,6 +42,14 @@ h3 {
     margin: 0px;
 }
 
+h4 {
+    font-family: 'Source Sans Pro';
+    color: #515151;
+    font-size: 1.6rem;
+    /* font-weight:; */
+    margin: 0px;
+}
+
 p {
     font-family: 'Source Sans Pro';
     color: #515151;
@@ -158,16 +166,6 @@ li {
 }
 
 /*------------------ design process -------------------- */
-
-/* .recent_work {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 35% 100px auto 200px 25%;
-    grid-template-rows: 40% 100px 5% auto;
-    margin: 0px;
-    align-items: center;
-    justify-content: center;
-} */
 
 .designProcess {
     height: 100vh;
@@ -294,6 +292,97 @@ li {
     color: #ffffff;
 }
 
+/*------------------ Case Study Carousel  -------------------- */
+
+.carousel {
+    grid-column: 5/span 4;
+    grid-row: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+}
+
+.cardOne {
+    background-color: #ffffff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40rem;
+    height: 30rem;
+    box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
+}
+
+.ThumbnailOne {
+    background: url(../images/case-study-thumbnails/EPA-resentation-humbnail.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 150px;
+    cursor: pointer;
+}
+
+.Tagone{
+    padding: .8rem 0 0 .8rem;
+}
+
+.Tone {
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    padding: .8rem 0 0 .8rem;
+    margin: 0;
+}
+
+.RMtOne {
+    font-size: 1.6rem;
+    color: #F24F13;
+    padding: .8rem 0 0 .8rem;
+    margin: 0px;
+    justify-self:flex-end;
+}
+
+
+
+
+/* ------------------------------------------------ */
+
+.cardTwo {
+    background-color: #ffffff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40rem;
+    height: 30rem;
+    box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
+}
+
+.ThumbnailTwo {
+    background: url(../images/case-study-thumbnails/Stronger-together-thumbnail.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 150px;
+    cursor: pointer;
+}
+
+.TagTwo {
+    padding: .8rem 0 0 .8rem;
+}
+
+.TTwo {
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    padding: .8rem 0 0 .8rem;
+    margin: 0;
+}
+
+.RMTwo {
+    font-size: 1.6rem;
+    color: #F24F13;
+    padding: .8rem 0 0 .8rem;
+    margin: 0px;
+    justify-self:flex-end;
+}
+
+
+
 
 /*------------------ UI Design  -------------------- */
 
@@ -321,7 +410,10 @@ li {
     font-weight: medium;
     padding: .8rem 1.5rem;
     cursor: pointer;
-    transition: background-color .4s ease-in-out;
+}
+
+.Tagone {
+    font-size: 1.6rem;
 }
 
 /*------------------ ui design grid gallery  -------------------- */
