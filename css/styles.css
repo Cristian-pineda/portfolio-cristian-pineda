@@ -513,10 +513,10 @@ li {
 
 
 .formTextContent {
-    justify-self: flex-end;
+    justify-self: flex-start;
     align-self: center;
     margin-left: 2.4rem;
-    grid-column: 1/ span 4;
+    grid-column: 2/ span 4;
     grid-row: 2/ span 5;
 }
 /* 
@@ -543,8 +543,77 @@ li {
 
 .input-container {
     margin: 1.6rem;
+    /* height: 4rem;
+    width: 10rem; */
+}
+
+.input-field {
+    height: 3rem;
+    width: 19rem;
+    border-radius: 2px;
+    border: 1px solid #51515162;
+}
+
+.inputNameheading {
+    margin: 0px;
+    align-self: flex-end;
+}
+
+.inputEmailheading {
+    margin: 0px;
+    align-self: flex-end;
 }
 
 .output-container {
     margin: 1.6rem;
 }
+
+.btnNext {
+
+    height: 30px;
+    width: 190px;
+    background-color: #F24F13; 
+    border: none;
+    color: white;
+    padding: .8rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btnNext:hover {
+    background-color: #3B6FD9;
+    color: #ffffff;
+    padding: .8rem 1.5rem;
+}
+
+
+
+.avatar {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(../images/avatars/Cristian\ Pineda\ Avatar.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-self: flex-end;
+    align-self: center;
+    display: flex;    
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.avatarOnbb {
+    background: #F24F13;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
+}
+
