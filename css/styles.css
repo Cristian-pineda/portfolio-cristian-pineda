@@ -1,30 +1,30 @@
 /* Doc Reset */
 
 * {
-    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
 
-/* colors */
-
-/* #515151 dark grey */
-/* #F24F13 solid orange  */
-/* #F29F05 mustard orange  */
-/* #F2F2F2 matte white */
-/* #3B6FD9 pastel blue */
-/* #1A5AD9 rich blue  */
+:root {
+    --solid-orange: #F24F13;
+    --mustard-yellow: #F29F05;
+    --pastel-blue: #3B6FD9;
+    --rich-blue: #1A5AD9;
+    --MWhite-color: #F2F2F2;
+    --Dgrey-color: #515151;
+}
 
 /*------------------ General Fonts-------------------- */
 
 html {
     font-size: 62.5%; /* reminder the 62.5% equals 10px and the rem units are multipliers so 1.6 rem would = 16px, 2.0 rem = 20px */
+    box-sizing: border-box;
 }
 
 h1 {
     font-family: 'Poppins';
     color: #000000;
-    font-size: 2.6rem;
+    font-size: 5.6rem;
     margin-bottom: 2rem;
 }
 
@@ -38,7 +38,7 @@ h2 {
 h3 {
     font-family: 'Source Sans Pro';
     color: #515151;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 0px;
 }
 
@@ -53,14 +53,14 @@ h4 {
 p {
     font-family: 'Source Sans Pro';
     color: #515151;
-    font-size: 1.6rem;
-    margin-bottom: 5rem;
+    font-size: 2rem;
+    margin-bottom: 10rem;
 }
 
 a {
     font-family: 'Poppins';
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 3.2rem;
 }
 
 li {
@@ -91,12 +91,12 @@ li {
 }
 
 .navItem {
-    margin-right: 3rem;
+    margin-right: 8rem;
 }
 
 
 .navItem a{
-    font-size: 2rem;
+    font-size: 3.2rem;
     color: black;
 }
 
@@ -108,7 +108,7 @@ li {
 }
 
 #logo {
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 #btn {
@@ -130,15 +130,17 @@ li {
 .home {
     height: 100vh;
     display: grid;
-    grid-template-columns: 25% 200px auto 200px 25%;
-    grid-template-rows: 40% 100px 5% auto;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 .hContent {
-    grid-column: 3;
-    grid-row: 2;
+    width: 820px;
+    height: 358px;
+    grid-column: 3/ span 1;
+    grid-row: 2/ span 3;
     text-align: center;
+    justify-self: center;
+    align-self: center;
 }
 
 #hiWork {
@@ -157,12 +159,13 @@ li {
 }
 
 .keybImage {
-    /* margin-top: 5rem; */
-    grid-column: 3;
-    grid-row: 4;
-    /* background-color: aliceblue; */
-    justify-self: center;
-    align-self: center;
+    grid-column: 3/ span 1;
+    grid-row: 5;
+    background: url(/images/keyboard.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1114px;
+    height: 369px;
 }
 
 /*------------------ design process -------------------- */
@@ -302,45 +305,19 @@ li {
     gap: 1.6rem;
 }
 
-.cardOne {
-    background-color: #ffffff;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 40rem;
-    height: 30rem;
+.card {
+    width: 350px;
     box-shadow: 0 4px 8px 0 rgba(59, 111, 217, .30);
-}
+    transition: 0.3s;
+  }
 
-.ThumbnailOne {
-    background: url(../images/case-study-thumbnails/EPA-resentation-humbnail.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: auto;
-    height: 150px;
-    cursor: pointer;
-}
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
-.Tagone{
-    padding: .8rem 0 0 .8rem;
-}
-
-.Tone {
-    font-family: 'Poppins';
-    font-size: 1.6rem;
-    padding: .8rem 0 0 .8rem;
-    margin: 0;
-}
-
-.RMtOne {
-    font-size: 1.6rem;
-    color: #F24F13;
-    padding: .8rem 0 0 .8rem;
-    margin: 0px;
-    justify-self:flex-end;
-}
-
-
-
+  .container {
+    padding: 2px 16px;
+  }
 
 /* ------------------------------------------------ */
 
