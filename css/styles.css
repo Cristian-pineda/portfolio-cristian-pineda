@@ -137,7 +137,7 @@ li {
     width: 820px;
     height: 358px;
     grid-column: 3/ span 1;
-    grid-row: 2/ span 3;
+    grid-row: 3/ span 2;
     text-align: center;
     justify-self: center;
     align-self: center;
@@ -164,7 +164,7 @@ li {
     background: url(/images/keyboard.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 1114px;
+    width: 820px;
     height: 369px;
 }
 
