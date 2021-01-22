@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -30,37 +31,35 @@
             <p>I'm a UX / UI Designer passionate about designing meaningful User Experiences. I'm currently  conducting  user research at Munch. Tap or click below to learn more about my design thinking process and how I work. </p>
             <a id="hiWork" href="#">How I work</a>
         </div>
-        <div class="keybImage">
-        </div>
+        <div class="keybImage"></div>
     </section>
 
-    <section class="designProcess">
-        <div class="designProcessContent">
-            <h3>#How-I-Work</h3>
-            <h1>Design Process</h1>
-            <p>From start to finish my goal is to create thoughtful design solutions that create enjoyable experiences, click or tap on each phase of the design thinking process to learn more.</p>
-            <a id="recentWorkbtn" href="#">Recent Work</a>
-        </div>
-        
+    <section class="designProcess"  style="background-color: #ffffff;">
         <div class="container">
-            <div class="panel active" id=c1 style="background-color: #F24F13;">
-                <h1>Research</h1>
-                <p>At the beginning of every project, I make it a point to sit down with all stakeholders to ensure that we're all on the same page and asking the right questions. Our goal is to develop an empathic understanding of the problem we are trying to solve by learning about the user, the company, and the competition.</p>
-            </div>
-            <div class="panel"  id=c2 style="background-color: #F29F05;">
-                <h1>Definition & Ideation</h1>
-                <p>By this point in the design thinking process, I've gathered all my findings from the research phase and will analyze and synthesize research to define the core problem. I will proceed to brainstorm solutions, and by the end of this phase, I will have defined a value proposition.</p>
-            </div>
-            <div class="panel" id=c3 style="background-color: #3B6FD9;">
-            <h1>Prototyping & testing</h1>
-            <p>At this point, I'll start mapping out user flows, sketching out wireframes, and I'll produce a minimum viable product (MVP) based on ideas identified in the previous phase. I'll then proceed to test the design and redesign based on user feedback. At the end of this stage, I'll have a proven, tested design ready for development.</p>
-            </div>
+                <div data-aos="slide-right" class="panel active" id="HowIwrk-Start" style="background-color: var(-MWhite-color);">
+                    <!-- <h3>#How-I-Work</h3> -->
+                    <h1>Design Process</h1>
+                    <p>From start to finish my goal is to create thoughtful design solutions that create enjoyable experiences, click or tap on each phase of the design thinking process to learn more.</p>
+                    <!-- <a class="recentWorkbtn" href="#">Recent Work</a> -->
+                </div>
+                <div data-aos="slide-left" class="panel" id=c1 style="background-color: var(--solid-orange);">
+                    <h1>Research</h1>
+                    <p>At the beginning of every project, I make it a point to sit down with all stakeholders to ensure that we're all on the same page and asking the right questions. Our goal is to develop an empathic understanding of the problem we are trying to solve by learning about the user, the company, and the competition.</p>
+                </div>
+                <div data-aos="slide-left" class="panel"  id=c2 style="background-color: var(--mustard-yellow);">
+                    <h1>Definition & Ideation</h1>
+                    <p>By this point in the design thinking process, I've gathered all my findings from the research phase and will analyze and synthesize research to define the core problem. I will proceed to brainstorm solutions, and by the end of this phase, I will have defined a value proposition.</p>
+                </div>
+                <div data-aos="slide-left" class="panel" id=c3 style="background-color: var(--pastel-blue);">
+                    <h1>Prototyping & testing</h1>
+                    <p>At this point, I'll start mapping out user flows, sketching out wireframes, and I'll produce a minimum viable product (MVP) based on ideas identified in the previous phase. I'll then proceed to test the design and redesign based on user feedback. At the end of this stage, I'll have a proven, tested design ready for development.</p>
+                </div>
         </div>
 
     </section>
 
     <section class="case_studies">
-        <div class="casestudy_Content">
+        <div data-aos="fade-up-right" class="casestudy_Content">
             <h3>#Dive-Deeper</h3>
             <h1>Recent Work</h1>
             <p>Click or tap on one of my case study's below & explore my design thinking process from start to finish. Learn about the research methods that were used, why they were used & how our findings impacted our design solutions or check out some of my concept UI designs.</p>
@@ -102,12 +101,12 @@
 
         <!-- <div class="gridGallery"> -->
 
-        <div class="image1"></div>
-        <div class="image2"></div>
-        <div class="image3"> </div>
-        <div class="image4"> </div>
-        <div class="image5"> </div>
-         <div class="image6"> </div>
+        <div data-aos="fade-left" class="image1"></div>
+        <div data-aos="fade-left" class="image2"></div>
+        <div data-aos="fade-left" class="image3"> </div>
+        <div data-aos="fade-left" class="image4"> </div>
+        <div data-aos="fade-left" class="image5"> </div>
+        <div data-aos="fade-left" class="image6"> </div>
 
         <!-- </div> -->
 
@@ -175,6 +174,7 @@
         
 
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/style.js"></script>
 </body>

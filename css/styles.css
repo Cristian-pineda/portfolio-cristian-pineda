@@ -76,9 +76,9 @@ li {
 
 .navbar {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
-    z-index: 5;
+    z-index: 10;
 }
 
 .navlinks {
@@ -130,7 +130,7 @@ li {
 
 .home {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -177,40 +177,45 @@ li {
 
 .designProcess {
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
     margin: 0px;
-    align-items: center;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
 }
 
-.designProcessContent {
-    grid-column: 1/span 4;
-    grid-row: 2/ span 3;
-    margin-left: 15%;
-}
 
-#recentWorkbtn {
+.recentWorkbtn {
+    align-self: flex-end;
     margin-bottom: 3rem;
     background-color: #F24F13;
     color: #ffffff;
+    width: 100px;
     padding: .8rem 1.5rem;
     cursor: pointer;
     transition: background-color .4s ease-in-out;
+    position: relative;
+    top: 35%;
 }
 
-#recentWorkbtn:hover {
+.recentWorkbtn:hover {
     background-color: #3B6FD9;
     color: #ffffff;
 }
 
 .container {
-    grid-column: 6/ span 4;
-    grid-row: 1/ span 5;
+    align-self: center;
+    height: 55%;
+    width: 70%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    
 }
 
 .panel {
@@ -218,39 +223,59 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
+    margin: 0 .1rem;
+    justify-self: center;
     cursor: pointer;
-    height: 100px;
+    height: 100%;
+    width: 25%;
     position: relative;
-    transition: height 0.7s ease-in;
+    transition: width 0.6s ease-out;
+    padding-left: 2rem;
 }
 
 .panel h1 {
     margin-top: 2rem;
-    text-align: center;
+    text-align: left;
     justify-self: center;
     align-self: center;
     font-size: 32px;
     color: #ffffff;
+    padding: 1rem;
+}
+
+.panel#HowIwrk-Start h1 {
+    color: #000000;
 }
 
 .panel p {
-    text-align: center;
+    text-align: left;
     font-size: 24px;
     position: absolute;
     justify-self: center;
     align-self: center;
-    margin: 0;
     opacity: 0;
+    padding: 1rem;
 }
 
 .panel.active {
-    height: 300px;
+    height: 100%;
+    width: 75%;
+    writing-mode:horizontal-tb;
+    text-orientation:upright;
 }
 
-.panle.active p {
+.active p{
+    color: #ffffff;
     z-index: 1;
     opacity: 1;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.4s ease-out;
+}
+
+.active#HowIwrk-Start p {
+    color: #000000;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
 }
 
 

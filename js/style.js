@@ -16,3 +16,6 @@ function removeActiveClasses() {
         panel.classList.remove('active')
     })
 }
+
+
+AOS.init();
